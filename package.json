@@ -1,0 +1,29 @@
+{
+  "name": "smartsheet-typescript-sdk",
+  "version": "1.0.0",
+  "description": "Smartsheet Typescript SDK",
+  "main": "index.ts",
+  "repository": "https://github.com/pkfire13/smartsheet-typescript-sdk.git",
+  "author": "pkfire13 <pkim31@gmail.com>",
+  "license": "MIT",
+  "keywords": [
+    "smartsheet",
+    "typescript",
+    "sdk"
+  ],
+  "scripts": {
+    "lint": "eslint --ext .tsx --ext .ts ./src",
+    "lint:fix": "eslint --ext .tsx --ext .ts ./src --fix",
+    "prettier:fix": "prettier --write ./src/."
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.55.0",
+    "@typescript-eslint/parser": "^5.55.0",
+    "eslint": "^8.36.0",
+    "eslint-config-prettier": "^8.7.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "prettier": "^2.8.4",
+    "typescript": "^4.9.5"
+  }
+}

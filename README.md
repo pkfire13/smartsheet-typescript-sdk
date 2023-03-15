@@ -1,1 +1,1 @@
-# smartsheet-typescript-sdk
+# Smartsheet Typescript SDK
