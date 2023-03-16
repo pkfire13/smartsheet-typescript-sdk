@@ -2,7 +2,9 @@
   "name": "smartsheet-typescript-sdk",
   "version": "1.0.0",
   "description": "Smartsheet Typescript SDK",
-  "main": "index.ts",
+  "main": "./dist/cjs/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
   "repository": "https://github.com/pkfire13/smartsheet-typescript-sdk.git",
   "author": "pkfire13 <pkim31@gmail.com>",
   "license": "Apache-2.0 ",
@@ -12,6 +14,9 @@
     "sdk"
   ],
   "scripts": {
+    "watch": "tsc -w -p ./tsconfig.json",
+    "clean": "node tools/cleanup",
+    "build": "yarn clean && tsc --project ./tsconfig.json && tsc --project ./tsconfig.cjs.json",
     "lint": "eslint --ext .tsx --ext .ts ./src",
     "lint:fix": "eslint --ext .tsx --ext .ts ./src --fix",
     "prettier:fix": "prettier --write ./src/."
@@ -24,6 +29,7 @@
     "eslint-config-prettier": "^8.7.0",
     "eslint-plugin-prettier": "^4.2.1",
     "prettier": "^2.8.4",
+    "ts-loader": "^9.4.2",
     "typescript": "^4.9.5"
   }
 }
