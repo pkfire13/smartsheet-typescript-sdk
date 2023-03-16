@@ -5,7 +5,7 @@
   "main": "index.ts",
   "repository": "https://github.com/pkfire13/smartsheet-typescript-sdk.git",
   "author": "pkfire13 <pkim31@gmail.com>",
-  "license": "MIT",
+  "license": "Apache-2.0 ",
   "keywords": [
     "smartsheet",
     "typescript",
