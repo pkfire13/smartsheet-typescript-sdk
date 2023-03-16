@@ -17,6 +17,8 @@
     "watch": "tsc -w -p ./tsconfig.json",
     "clean": "node tools/cleanup",
     "build": "yarn clean && tsc --project ./tsconfig.json && tsc --project ./tsconfig.cjs.json",
+    "test": "vitest --run --dangerouslyIgnoreUnhandledErrors",
+    "test:unit": "yarn test .unit.spec.ts",
     "lint": "eslint --ext .tsx --ext .ts ./src",
     "lint:fix": "eslint --ext .tsx --ext .ts ./src --fix",
     "prettier:fix": "prettier --write ./src/."
@@ -30,6 +32,7 @@
     "eslint-plugin-prettier": "^4.2.1",
     "prettier": "^2.8.4",
     "ts-loader": "^9.4.2",
-    "typescript": "^4.9.5"
+    "typescript": "^4.9.5",
+    "vitest": "^0.29.3"
   }
 }
